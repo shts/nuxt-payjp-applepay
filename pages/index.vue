@@ -1,8 +1,6 @@
 <template>
-  <div class="container">
-    <h1 class="title">
-      nuxt-payjp
-    </h1>
+  <div>
+    <a href="/pay.html">ここから Apple Pay</a>
   </div>
 </template>
 
@@ -11,8 +9,15 @@ import { Vue, Component } from 'vue-property-decorator'
 
 @Component
 export default class index extends Vue {
-
 }
 </script>
 
-<style></style>
+<style scoped>
+  div {
+    min-height: 100vh;
+    text-align: center;
+  }
+  a {
+    font-size: 36px;
+  }
+</style>
